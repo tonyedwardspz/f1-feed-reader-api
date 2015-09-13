@@ -1,4 +1,4 @@
-json.news_items do
+json.items do
   json.array! @news_items do |item|
 	  json.title = item.title
 	  json.description = item.description

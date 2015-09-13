@@ -2,8 +2,6 @@ ruby '2.1.3'
 
 source 'https://rubygems.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -13,8 +11,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -30,7 +26,6 @@ group :development, :test do
   gem 'spring'
 end
 
-
 gem 'slim-rails'
 gem 'unicorn'
 gem 'simple_form', '~> 3.1.0'
@@ -43,9 +38,3 @@ gem 'minitest-rails-capybara', group: :test
 gem 'minitest-rg', group: :test
 gem 'minitest-documentation', group: :test
 gem 'simplecov', group: :test, require: false
-gem 'capistrano', require: false
-gem 'capistrano-maintenance', require: false
-gem 'capistrano-rbenv', require: false
-gem 'capistrano-bundler', require: false
-gem 'capistrano-rails', require: false
-gem 'capistrano-pending', require: false
