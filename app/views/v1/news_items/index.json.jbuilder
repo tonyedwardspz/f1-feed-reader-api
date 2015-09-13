@@ -1,7 +1,7 @@
 json.news_items do
   json.array! @news_items do |item|
 	  json.title = item.title
-	  json.description - item.description
+	  json.description = item.description
 	  json.pubDate = item.pubDate
 	  json.link = item.link
   end
