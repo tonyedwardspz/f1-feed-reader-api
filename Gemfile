@@ -34,6 +34,7 @@ gem 'unicorn'
 gem 'simple_form', '~> 3.1.0'
 gem 'crack'
 gem 'json'
+gem 'rails_12factor'
 gem 'factory_girl', group: [:development, :test]
 gem 'minitest-rails'
 gem 'minitest-rails-capybara', group: :test
