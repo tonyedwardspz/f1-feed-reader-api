@@ -38,3 +38,4 @@ gem 'minitest-rails-capybara', group: :test
 gem 'minitest-rg', group: :test
 gem 'minitest-documentation', group: :test
 gem 'simplecov', group: :test, require: false
+gem 'rack-cors', :require => 'rack/cors'
