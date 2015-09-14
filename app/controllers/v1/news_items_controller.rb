@@ -1,6 +1,8 @@
 class V1::NewsItemsController < ApplicationController
   require 'crack'
 
+  before_filter :headers
+
   def index
 
     url = URI.parse('http://feeds.bbci.co.uk/sport/0/formula1/rss.xml')
@@ -17,5 +19,12 @@ class V1::NewsItemsController < ApplicationController
     end
 
     @news_items = V1::NewsItem.all
+  end
+
+  def headers
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
+    headers['Access-Control-Request-Method'] = '*'
+    headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
   end
 end
