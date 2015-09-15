@@ -11,7 +11,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
@@ -39,3 +38,4 @@ gem 'minitest-rg', group: :test
 gem 'minitest-documentation', group: :test
 gem 'simplecov', group: :test, require: false
 gem 'rack-cors', :require => 'rack/cors'
+gem "ruby-readability", :require => 'readability'

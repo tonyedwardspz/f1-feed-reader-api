@@ -66,6 +66,7 @@ GEM
       activesupport (>= 3.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    guess_html_encoding (0.0.11)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.13)
@@ -137,6 +138,9 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.4.2)
+    ruby-readability (0.7.0)
+      guess_html_encoding (>= 0.0.4)
+      nokogiri (>= 1.6.0)
     safe_yaml (1.0.4)
     sass (3.4.16)
     sass-rails (5.0.3)
@@ -211,6 +215,7 @@ DEPENDENCIES
   rack-cors
   rails (= 4.2.1)
   rails_12factor
+  ruby-readability
   sass-rails (~> 5.0)
   simple_form (~> 3.1.0)
   simplecov
