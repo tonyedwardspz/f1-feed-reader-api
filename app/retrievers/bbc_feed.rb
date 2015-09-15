@@ -1,6 +1,6 @@
-class BbcFeed < ActionController::Base
+class BbcFeed
 
-  def fetch_feed
+  def self.fetch_feed
     url = URI.parse('http://feeds.bbci.co.uk/sport/0/formula1/rss.xml')
     req = Net::HTTP::Get.new(url.to_s)
     res = Net::HTTP.start(url.host, url.port) {|http|

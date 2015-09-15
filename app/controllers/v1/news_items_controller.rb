@@ -15,7 +15,9 @@ class V1::NewsItemsController < ApplicationController
 
     # puts content
 
-    @news_items = V1::NewsItem.all.limit(30)
+    BbcFeed.fetch_feed
+
+    @news_items = NewsItem.all.limit(30)
   end
 
 end
