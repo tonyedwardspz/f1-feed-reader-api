@@ -1,6 +1,6 @@
 class V1::NewsItemsController < ApplicationController
 
-  after_filter :fecth, :only => :index
+  after_filter :fetch, :only => :index
 
   def index
     puts "***************** Index ******************"
