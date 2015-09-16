@@ -4,7 +4,7 @@
 # http://en.wikipedia.org/wiki/Cron
 
 every :hour do # Many shortcuts available: :hour, :day, :month, :year, :reboot
-  runner "GetFeed.fetch_all_feeds"
+  runner "NewsFeed.fetch_all_feeds"
 end
 
 # Learn more: http://github.com/javan/whenever

@@ -1,11 +1,6 @@
 class GetFeed
   require 'crack'
 
-  def self.fetch_all_feeds
-    self.fetch_bbc_feed
-    self.fetch_telegraph_feed
-  end
-
   def self.fetch_bbc_feed
     url = URI.parse('http://feeds.bbci.co.uk/sport/0/formula1/rss.xml')
     req = Net::HTTP::Get.new(url.to_s)
