@@ -30,7 +30,7 @@ class GetFeed
     parsedItems = Crack::XML.parse(res.body)
 
     parsedItems["rss"]["channel"]["item"].each do |itm|
-      if NewsItem.where(:link => itm["link"]).blank?
+      if NewsItem.where(:link => itm["guid"]).blank?
         NewsItem.create(:title => itm["title"],
                         :description => ActionView::Base.full_sanitizer.sanitize(itm["description"]) + ".",
                         :link => itm["guid"],

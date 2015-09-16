@@ -1,17 +1,12 @@
 class V1::NewsItemsController < ApplicationController
-
   after_filter :fetch, :only => :index
 
   def index
-    puts "***************** Index ******************"
     @news_items = NewsItem.all.order("pub_date DESC").limit(30)
   end
 
-
   private
     def fetch
-      GetFeed.fetch_bbc_feed
-      GetFeed.fetch_telegraph_feed
+      NewsItem.fetch_all_feeds
     end
-
 end
