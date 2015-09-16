@@ -39,3 +39,4 @@ gem 'minitest-documentation', group: :test
 gem 'simplecov', group: :test, require: false
 gem 'rack-cors', :require => 'rack/cors'
 gem "ruby-readability", :require => 'readability'
+gem 'whenever', :require => false
